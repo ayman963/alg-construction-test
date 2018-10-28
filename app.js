@@ -11,7 +11,7 @@ var app = http.createServer(function (req, res) {
         res.write('Error 404: Resource not found.');
         console.log(err);
       } else {
-        res.writeHead(200, {'Content-Type': 'image/svg+xml'});
+        res.writeHead(200, {'Content-Type': 'image/png'});
         res.write(data);
       }  
       res.end();
